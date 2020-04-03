@@ -8,7 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/071fdb1ca4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/071fdb1ca4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css\main.css">
@@ -21,16 +23,25 @@
         <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-10">
-                <div class="container-fluid  col-lg-8 offset-lg-2 col-md-8 col-12 offest-md-2 col-sm-8 offset-sm-2">
-                    <div class="input-group">                   
+               <!--  <div class="container-fluid  col-lg-8 offset-lg-2 col-md-8 col-12 offest-md-2 col-sm-8 offset-sm-2">
+                   <div class="input-group">                   
                         <input type="search" class="form-control" placeholder="search here">
                         <div class="input-group-prepend" style="max-height: 3rem;margin-right:10px">
                                <button class="input-group-text btn btn-primary">search</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                     <nav class="navbar navbar-expand-md navbar-dark">
-                            <a class="navbar-brand text-dark" href="#"><label style="color:white;background:linear-gradient(#fff,#000)">EASYway</label></a>
+                          <a class="navbar-brand text-dark" href="#">
+                            <label class="h" style="color:white;">E</label>
+                            <label class="h" style="color:white;">A</label>
+                            <label class="h" style="color:white;">S</label>
+                            <label class="h" style="color:white;">Y</label>
+                            <label class="h" style="color:white;">w</label>
+                            <label class="h" style="color:white;">a</label>
+                            <label class="h" style="color:white;">y</label>
+                              
+                            </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
@@ -38,30 +49,30 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                  <a class="nav-link text-dark" href="#myservices">home</a>
+                                  <a class="nav-link text-white" href="#myservices">home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     services
                                   </a>
                                   <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-white" href="#">previous question</a>
-                                    <a class="dropdown-item text-white" href="#">free test</a>
-                                    <a class="dropdown-item text-white" href="#">AITS</a>
-                                    <a class="dropdown-item text-white" href="#">video lecture</a>
+                                    <a class="dropdown-item text-dark" href="#">previous question</a>
+                                    <a class="dropdown-item text-dark" href="#">free test</a>
+                                    <a class="dropdown-item text-dark" href="#">AITS</a>
+                                    <a class="dropdown-item text-dark" href="#">video lecture</a>
                                   </div>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link text-dark" href="#myservices">rank predictor</a>
+                                  <a class="nav-link text-white" href="#myservices">rank predictor</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">about</a>
+                                    <a class="nav-link text-white" href="#">about</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#contactus">contactus</a>
+                                    <a class="nav-link text-white" href="#contactus">contactus</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">login</a>
+                                    <a class="nav-link text-white"data-toggle="modal" data-target="#myModal">login</a>
                                 </li>
                               </ul>
                             
@@ -75,8 +86,8 @@
           
         
             <div class="headerbutton">                   
-                <a href="#" class="btn">login</a>
-                <a href="#" class="btn">signup</a>
+                <a  data-toggle="modal" data-target="#myModal" class="btn">login</a>
+                <a  type="submit" class="btn">signup</a>
             </div>
     </section>
 
@@ -90,22 +101,28 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 features">
                 <i class="fas fa-desktop fa-3x " style="display:flex;justify-content:center;color:#05d7e6;"></i>
                 <h4>easy to access</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! Cumque velit
-                     culpa eius quibusdam suscipit similique assumenda ipsa dolorum consectetur! Quam quos
+                <p>
+                  best part of this website is here you can find all type of video lecture regarding important topic.
+                  previous year question of jee-mains jee-advanced comdek wbjee nda and free test  all competative exam.
+                  and we also bring time to time all india test series.<br>
+                  <h6 style="color:red">--one platform many option</h6>
                 </p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 features">
-                    <i class="fas fa-desktop fa-3x" style="display:flex;justify-content:center;color:#05d7e6;"></i>
+            <i class='fas fa-graduation-cap ' style="font-size:50px;display:flex;justify-content:center;color:#05d7e6;"></i>
                     <h4>rank predictor</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! Cumque velit
-                         culpa eius quibusdam suscipit similique assumenda ipsa dolorum consectetur! Quam quos
+                    <p>
+                      if you want to predict your rank it is a great website do it .
+                      accurate prediction of your of college according to your rank
                     </p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 features">  
-                        <i class="fas fa-desktop fa-3x" style="display:flex;justify-content:center;color:#05d7e6;"></i>
+            <i class='fas fa-book-open' style="font-size:48px;display:flex;justify-content:center;color:#05d7e6;"></i>
                         <h4>free test</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio! Cumque velit
-                             culpa eius quibusdam suscipit similique assumenda ipsa dolorum consectetur! Quam quos
+                        <p>
+                          a free test series only for you.here you can test yoursef before you competative exam.
+                          question set by faculty of many reputative teacher of different big instiutes and college.
+                          you get your full report card of your test. 
                         </p>
         </div>
     </div>
@@ -121,8 +138,9 @@
                         <img class="card-img-top img-fluid" src="img/video.jpg" alt="Card image">
                         <div class="card-body">
                           <h4 class="card-title">video lecture</h4>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti modi 
-                              exercitationem, explicabo iste repellendus rerum! Atque, dolore quam quas aspernatur 
+                          <p class="card-text">you have to mess up with many problem to find a proper lecture of any sublect in youtube.
+                            easyway bring a collection of youtube video of repuated teacher have a more than a year of expreience .
+                            if you want more video please make a comment in contactus section,we bring within a day.  
                           </p><br><br>
                           <a href="#" class=" text-center">lecture</a>
                         </div>
@@ -131,19 +149,22 @@
                             <img class="card-img-top img-fluid" src="img/previous.jpg" alt="Card image">
                             <div class="card-body">
                               <h4 class="card-title">previous question</h4>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Arc
-                                  hitecto ipsa ut autem iure qui, libero dicta harum quae explicabo. Totam accusamus aliquid
+                              <p class="card-text">
+                                here you will find a last 5-6  previous year question of jee-mains jee-advanced comdek wbjee nda
+                                if you want more question paper make a comment in contactus section. we defineetly take a action 
+                                witin a day
                                 </p><br><br>
-                              <a href="#" class="text-center">question</a>
+                              <a href="http:\\www.youtube.com" class="text-center">question</a>
                             </div>
                           </div>
                           <div class="card col-lg-4 col-md-4 col-sm-12 col-12 services" style="width:400px">
                                 <img class="card-img-top img-fluid" src="img/Screenshot (42).png" alt="Card image">
                                 <div class="card-body">
                                   <h4 class="card-title">AITS</h4>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                      Consequatur vitae similique necessitatibus adipisci aspernatur. Animi necessitatibus 
-                                    </p><br><br>
+                                  <p class="card-text">
+                                  <h6 style="color:red;"> ! ...... CURRENTLY UNAVAILABLE</h6>
+                                    
+                                  </p><br><br>
                                       <a href="#" class="text-center">aits</a>
                                 </div>
                               </div>
@@ -168,16 +189,16 @@
        
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/1.jpg" alt="Los Angeles">
+            <img src="img/e-learning-2.jpg" alt="Los Angeles">
           </div>
           <div class="carousel-item">
-            <img src="img/2.jpg" alt="Chicago">
+            <img src="img/bk2.jpg" alt="Chicago">
           </div>
           <div class="carousel-item">
-            <img src="img/3.jpg" alt="New York">
+            <img src="img/bk.3.webp" alt="New York">
           </div>
           <div class="carousel-item">
-                <img src="img/4.jpg" alt="New York">
+                <img src="img/1.jpg" alt="New York">
             </div>
             
         </div>
@@ -215,7 +236,7 @@
                 <div class="form-group">
                      <textarea class="form-control"autocomplete="off" required rows="5" id="comment" name="comment" placeholder="enter your comment"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary m-auto">Submit</button>
+                <button type="submit" class="btn m-auto">Submit</button>
               </form>
             </div>
         </div>
@@ -242,32 +263,80 @@
               <br>
                 <h4>navigation links</h4>
                 <br><br>
+                <li><a href="#myservices">home</a></li>
                 <li><a href="">services</a></li>
                 <li><a href="">aboutus</a></li>
                 <li><a href="">rank predicator</a></li>
-                <li><a href="">contactus</a></li>
-                <li><a href="">login</a></li>
+                <li><a href="#contactus">contactus</a></li>
+                <li><a  data-toggle="modal" data-target="#myModal">login</a></li>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 singlediv">
               <br>
               <h4>contact us</h4>
               <br><br>
-              <li>EMAIL id    :  <a href="mailto://04uvinayakkumar@gmail.com"> click here</a></li>
-              <li><p>contact no  : 8210771618  </p>
+              <li>EMAIL id       :  <a href="mailto://04uvinayakkumar@gmail.com"> click here</a></li>
+              <li>contact no  : <a href="#">8210771618</a></li>
             </div>
           </div>
             <div class="scrolltop float-right">
-                <i class='fas fa-angle-up' style='font-size:40px;' onclick="topfunction()" id="mybtn"></i>
+                <i class='fas fa-angle-up' style='font-size:40px;' onclick="topfunction()" id="mybt"></i>
             </div>
     
   </div>
   </section>
 
 <!--  ......................................footer  end...................................-->
-<!--  ......................................javascript start...................................
+
+<!--  ......................................model login start...................................-->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        
+          <!-- Modal Header -->
+      <div class="modal-header">
+          <img src="img/head.png"class=" rounded-circle" style="width:100px;">
+          <h4 class="m-auto">EASYWAY</h4>        
+          <h4 class="modal-title m-auto">LOGIN</h4>         
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>          
+          <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container col-lg-12  col-md-12 col-sm-12 col-12">
+              <form action="/action_page.php">
+                <div class="form-group">
+                    <input type="name" class="form-control m-auto" autocomplete="off" required placeholder="enter your name" id="name" name="name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control m-auto"autocomplete="off" required placeholder="Enter email" id="email"name="email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control m-auto"autocomplete="off" required placeholder="Enter your password" id="mobile" name="password">
+                </div>
+                <div class="form-group button">              
+                <button type="submit" class="btn m-auto">login</button>
+                <a href="#" data-toggle="modal" data-target="#msignup" class="btn m-auto">create a account</a>
+                </div>
+              </form>
+            </div>          
+        </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>  
+      </div> 
+</div>
+ 
+  <!--  ......................................model login end...................................-->
+ 
+ 
+ 
+  <!--  ......................................javascript start...................................
 --> 
 <script>
-    mybutton=document.getElementById("mybtn");
+    mybutton=document.getElementById("mybt");
     window.onscroll =function(){scrollfunction()};
 
     function scrollfunction()
@@ -290,6 +359,10 @@
 </script>
 
 <!--  ......................................javascript end...................................-->
+
+
+
+
 
 </body>
 </html>
