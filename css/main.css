@@ -45,7 +45,7 @@ a{font-family: 'Sigmar One', cursive;}
 .header{
     width:100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('../img/bk1.jpg');
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('../img/qwer.jfif');
     background-repeat: no-repeat;
     background-size:100% 100%;
     clip-path: polygon(100% 0%,100% 75%,50% 100%,0% 75%,0 0);
@@ -331,9 +331,7 @@ a{font-family: 'Sigmar One', cursive;}
 /* ................................................. footer end....................................................*/
 
 /* .................................................modal start..............................................*/
-.modal{
-    border-radius:100px!important;
-}
+
 .modal-content{
     width:70%!important;
     height:80vh!important;
@@ -382,7 +380,6 @@ a{font-family: 'Sigmar One', cursive;}
 }
 .modal-body a:hover,.modal-body button:hover{
     transform:translateY(-10px);
-    border-radius:10px;
     box-shadow: 0 0 20px 0 #000;
 }
 .button{
@@ -407,7 +404,16 @@ a{font-family: 'Sigmar One', cursive;}
     .singlediv{padding:10px 10px 10px 10px;}
     .dropdown-item:hover{background-color:rgb(115, 185, 130);opacity:0.5;color:#000;font-size:1.3rem;z-index:-1;}
     .modal-content{width:100%!important;height:100vh!important;}
-}
+    .modal-header h4{font-size:1rem;}
+    .button a:hover{margin-top:20px;}
 
+}
+@media(max-width: 568px){
+    .h{margin-left:0px;font-size:2rem;}
+    .header{width:100%;}
+    .modal input{width:100%;}
+    .modal button,.modal a{border:2px solid #82d4d4;}    
+    .form-group{ display:block;margin:20px;}
+}
 /* .................................................media query end....................................................*/
 

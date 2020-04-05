@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/071fdb1ca4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css\signup.css">
+    <title>signup page</title>
+</head>
+<body>
+    
+<!--..........................................header start...............................................-->
+
+<section class="combi-navlogo"> 
+        <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-12">
+            <nav class="navbar navbar-dark">
+                    <!-- Brand/logo -->
+                <a class="navbar-brand text-dark whole" href="#">
+                        <label class="logo" style="color:white;">E</label>
+                        <label class="logo" style="color:white;">A</label>
+                        <label class="logo" style="color:white;">S</label>
+                        <label class="logo" style="color:white;">Y</label>
+                        <label class="logo" style="color:white;">w</label>
+                        <label class="logo" style="color:white;">a</label>
+                        <label class="logo" style="color:white;">y</label>
+                </a>
+            </nav>
+        </div>
+
+</section>  
+
+<!--..........................................header end...............................................-->
+
+<section class="heading">
+        <div class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-10">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link text-white" href="#myservices">home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    services
+                                  </a>
+                                  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item text-white" href="#">previous question</a>
+                                    <a class="dropdown-item text-white" href="#">free test</a>
+                                    <a class="dropdown-item text-white" href="#">AITS</a>
+                                    <a class="dropdown-item text-white" href="#">video lecture</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" href="#myservices">rank predictor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#contactus">contactus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white"  data-toggle="modal" data-target="#myModal">login</a>
+                                </li>
+                              </ul>
+                            
+                            </div>
+                    </nav>                                 
+            </div>
+        </div>
+         </div>
+</section>  <br>
+
+<!--..........................................navbar start...............................................-->
+<br><br>
+<!--..........................................signup dialog box start...............................................-->
+<section class="contactus">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" contact col-lg-8 col-md-8 col-sm-10 col-12 offset-lg-2 offset-md-2 col-sm-1">
+                <form action="action_page.php" onsubmit="return validation()">
+                    <div class="form-group">
+                        <input type="name" class="form-control m-auto" autocomplete="off"  placeholder="enter your name" id="name" name="name">
+                                <span class="check"id="namecheck"></span>
+                    </div>
+                    <div class="form-group">
+                       <input type="email" class="form-control m-auto text-dark"autocomplete="off"  placeholder="Enter email" id="email"name="email">
+                                <span class="check"id="emailcheck"></span>
+                       
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control m-auto text-dark"autocomplete="off"  placeholder="Enter your mobile number" id="mobile" name="password">
+                                <span class="check"id="mobilecheck"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control m-auto text-dark"autocomplete="off"  placeholder="Enter your password" id="password" name="password">
+                                <span class="check"id="passwordcheck"></span>
+                    </div> 
+                    <div class="form-group">
+                        <input type="password" class="form-control m-auto text-dark"autocomplete="off"  placeholder="confirm password" id="cnfpassword" name="password">
+                                <span class="check"id="cnfpasswordcheck"></span>
+                    </div><br><br>
+                    <div class="form-group signbutton">              
+                        <button type="submit" class="btn m-auto text-dark text-white btn1">create</button>
+                        <a  data-toggle="modal" data-target="#myModal" class="btn m-auto text-dark text-white btn2">login</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--..........................................signup dialog box end...............................................-->
+
+
+
+<!--  ......................................footer  start.........................................................-->
+<section>
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 singlediv">
+                  <br>
+                    <h4>about easyway</h4>
+                    <br><br>
+                    <p>the world has become so fast that people don't want to stand by reading a page of information
+                        to be they would would much rather look at easiest way to find all thing at aone platform.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 singlediv">
+                  <br>
+                    <h4>navigation links</h4>
+                    <br><br>
+                    <li><a href="#myservices">home</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">aboutus</a></li>
+                    <li><a href="">rank predicator</a></li>
+                    <li><a href="#contactus">contactus</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal">login</a></li>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 singlediv">
+                  <br>
+                  <h4>contact us</h4>
+                  <br><br>
+                  <li>EMAIL id       :  <a href="mailto://04uvinayakkumar@gmail.com"> click here</a></li>
+                  <li>contact no  : <a href="#">8210771618</a></li>
+                </div>
+              </div>
+                <div class="scrolltop float-right">
+                    <i class='fas fa-angle-up' style='font-size:40px;' onclick="topfunction()" id="mybt"></i>
+                </div>
+        
+      </div>
+      </section>  
+    
+    <!--  ......................................footer  end...................................-->
+
+    <!--  ......................................model login start...................................-->
+<div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              
+                <!-- Modal Header -->
+            <div class="modal-header">
+                <img src="img/head.png"class=" rounded-circle" style="width:100px;">
+                <h4 class="m-auto">EASYWAY</h4>        
+                <h4 class="modal-title m-auto">LOGIN</h4>         
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>          
+                <!-- Modal body -->
+              <div class="modal-body">
+                <div class="container col-lg-12  col-md-12 col-sm-12 col-12">
+                    <form action="/action_page.php">
+                      <div class="form-group">
+                          <input type="name" class="form-control m-auto" autocomplete="off" required placeholder="enter your name" id="name" name="name">
+                                <span id=""></span>
+                        </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control m-auto"autocomplete="off" required placeholder="Enter email" id="email"name="email">
+                                <span id=""></span>
+                    </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control m-auto"autocomplete="off" required placeholder="Enter your password" id="mobile" name="password">
+                                <span id=""></span>
+                    </div>
+                      <div class="form-group button">              
+                      <button type="submit" class="btn m-auto"data-toggle="modal" data-target="#myModal">login</button>
+                      <a href="signup.html"  class="btn m-auto">create a account</a>
+                      </div>
+                    </form>
+                  </div>          
+              </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>  
+            </div> 
+      </div>
+       
+        <!--  ......................................model login end...................................-->
+       
+       
+     <!--  ......................................javascript start...................................--> 
+<script>
+        mybutton=document.getElementById("mybt");
+        window.onscroll =function(){scrollfunction()};
+    
+        function scrollfunction()
+        {
+          if(document.body.scrollTop >20 ||  document.documentElement.scrollTop>20)
+          {
+            mybutton.style.display ="block";
+          }
+          else{
+            mybutton.style.display="none";
+          }
+        }
+    
+        function topfunction()
+        {
+          document.body.scrollTop=0;
+          document.documentElement.scrollTop=0;
+        }
+
+</script>
+    
+    <!--  ......................................javascript end...................................-->
+    
+     <!--  ......................................validation start...................................--> 
+        <script>
+
+             function validation()
+             {
+                 var name=document.getElementById('name').value;
+                 var mobile=document.getElementById('mobile').value;
+                 var email=document.getElementById('email').value;
+                 var password=document.getElementById('password').value;
+                 var cnfpassword=document.getElementById('cnfpassword').value;
+                 var namecheck=/^[a-zA-Z. ]{3,30}$/;
+                 var mobilecheck=/^[6789]{1}[0-9]{9}$/;
+                 var passwordcheck=/^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*?><])[A-Za-z0-9!@#$%^&*]{8,16}$/;
+                 var emailcheck=/^[A-Za-z0-9_]{3,20}@[A-Za-z]{3,20}[.][A-Za-z]{2,20}$/;
+                 if(namecheck.test(name))
+                 {
+                    document.getElementById("namecheck").innerHTML=" ";                   
+                    }
+                 else{
+                    document.getElementById("namecheck").innerHTML="  *** enter valid name ** ";
+                    return false;
+                 }
+                 if(mobilecheck.test(mobile))
+                 {
+                    document.getElementById("mobilecheck").innerHTML=" ";                   
+                    }
+                 else{
+                    document.getElementById("mobilecheck").innerHTML="  *** enter valid mobile number ** ";
+                    return false;
+                 }
+                 if(passwordcheck.test(password))
+                 {
+                    document.getElementById("passwordcheck").innerHTML=" ";                   
+                    }
+                 else{
+                    document.getElementById("passwordcheck").innerHTML="  *** password contain atleast a capital,specialcharacter and digit ** ";
+                    return false;
+                 }
+                if(emailcheck.test(email))
+                 {
+                    document.getElementById("emailcheck").innerHTML=" ";                   
+                    }
+                 else{
+                    document.getElementById("emailcheck").innerHTML="  *** enter correct email address ** ";
+                    return false;
+                 }
+                 if(!password.match(cnfpassword))
+                 { 
+                     document.getElementById("cnfpasswordcheck").innerHTML="  *** confirm password not match with password ** ";
+                    return false;
+                 }
+             }
+ 
+</script>
+     <!--  ......................................validation end...................................--> 
+
+</body>
+</html>
