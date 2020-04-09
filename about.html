@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/071fdb1ca4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css\signup.css">
-    <title>signup page</title>
+    <link rel="stylesheet" href="css\about.css">
+    <title>about page</title>
 </head>
 <body>
     
@@ -52,27 +52,32 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                  <a class="nav-link text-white" href="#myservices">home</a>
+                                  <a class="nav-link text-white" href="index.html">home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     services
                                   </a>
-                                  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                  <div class="dropdown-menu dropright video" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item text-white" href="#">previous question</a>
                                     <a class="dropdown-item text-white" href="#">free test</a>
                                     <a class="dropdown-item text-white" href="#">AITS</a>
-                                    <a class="dropdown-item text-white" href="#">video lecture</a>
+                                        <a class="dropdown-item text-white dropdown dropdown-toggle video1" href="#" id="videoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                             video lecture    
+                                                      <div class="dropdown-menu  videodiv" aria-labelledby="videoDropdown">
+                                                        <a class="dropdown-item text-white" href="#">class 11</a>
+                                                        <a class="dropdown-item text-white" href="#">class 12</a>
+                                                      </div>    
+
+                                        </a>
                                   </div>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link text-white" href="#myservices">rank predictor</a>
                                 </li>
+                               
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#contactus">contactus</a>
+                                    <a class="nav-link text-white" href="index.html">contactus</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white"  data-toggle="modal" data-target="#myModal">login</a>
@@ -90,22 +95,25 @@
 <!--..........................................introduction start...............................................-->
 <section>
     <div class="container-fluid col-lg-8 col-md-8 col-sm-10 col-12 offset-lg-2 offset-md-2 offset-sm-1">
-        <h3>introduction</h3>
-        <p>the world has become so fast that people don't want to stand by reading a page of information
+        <h3>introduction</h3><br>
+        <h6>the world has become so fast that people don't want to stand by reading a page of information
                     to be they would would much rather look at easiest way to find all thing at a one platform.
             how do you feel when  you get video lecture ,all india test series and and free test for the poor people.
             the most important part is that here you get previous year question of all the important competative exam like jee advanced,jee mains
             nda comdek wbjee and other ---.
             easyway is the simplest platform were you can access al these importantthings.
-            we treat you as the family once you login into these website.
-           <h6> ----EASYWAY is the platform of success........................</h6>
-        </p>
+            we treat you as the family once you login into these website.<br>
+           <h4> ----EASYWAY is the platform of success........................</h4>
+        </h6>
     </div>
 
 </section>
 <!--..........................................introduction end...............................................-->
+
+<!--..........................................features start...............................................-->
 <section>
         <div class="container-fluid col-lg-8 col-md-8 col-sm-10 col-12 offset-lg-2 offset-md-2 offset-sm-1">
+          <h3>features</h3><br><br>
             <h6>you have to mess up with many problem to find a proper lecture of any sublect in youtube.
                     easyway bring a collection of youtube video of repuated teacher have a more than a year of expreience .
                     if you want more video please make a comment in contactus section,we bring within a day.  </h6>
@@ -129,13 +137,14 @@
                         and we also bring time to time all india test series.</h6>    
                 </div>
 </section>
-<!--..........................................features start...............................................-->
+
 
 
 <!--..........................................features end...............................................-->
 <!--..........................................objective start...............................................-->
-<section>
+<section class="objective">
         <div class="container-fluid col-lg-8 col-md-8 col-sm-10 col-12 offset-lg-2 offset-md-2 offset-sm-1">
+          <h3>objective</h3>
             <ul>
             <li>provide all the neccesary thing for competative studet a one platform</li>
             <li>previous year question</li>
@@ -165,11 +174,11 @@
                   <br>
                     <h4>navigation links</h4>
                     <br><br>
-                    <li><a href="#myservices">home</a></li>
+                    <li><a href="index.html">home</a></li>
                     <li><a href="">services</a></li>
-                    <li><a href="">aboutus</a></li>
+                  
                     <li><a href="">rank predicator</a></li>
-                    <li><a href="#contactus">contactus</a></li>
+                    <li><a href="index.html">contactus</a></li>
                     <li><a data-toggle="modal" data-target="#myModal">login</a></li>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 singlediv">
@@ -189,6 +198,54 @@
     
 
 <!--..........................................footer end...............................................-->
+
+
+
+<!--  ......................................model login start................................... -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+       
+          <!-- Modal Header  -->
+      <div class="modal-header">
+          <img src="img/head.png"class=" rounded-circle" style="width:100px;">
+          <h4 class="m-auto">EASYWAY</h4>        
+          <h4 class="modal-title m-auto">LOGIN</h4>         
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>         
+          <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container col-lg-12  col-md-12 col-sm-12 col-12">
+              <form action="/action_page.php">
+                <div class="form-group">
+                    <input type="name" class="form-control m-auto" autocomplete="off" required placeholder="enter your name" id="name" name="name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control m-auto"autocomplete="off" required placeholder="Enter email" id="email"name="email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control m-auto"autocomplete="off" required placeholder="Enter your password" id="mobile" name="password">
+                </div>
+                <div class="form-group button">              
+                <button type="submit" class="btn m-auto">login</button>
+                <a  href="signup.html" class="btn m-auto">signup</a>
+                </div>
+              </form>
+            </div>          
+        </div>
+           
+          <!-- Modal footer--> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger m-auto" data-dismiss="modal" >Close</button>
+          </div>
+          
+        </div>  
+      </div> 
+</div>
+
+  <!--  ......................................model login end...................................-->
+ 
+ 
 
 <!--..........................................javascript start...............................................-->
 
